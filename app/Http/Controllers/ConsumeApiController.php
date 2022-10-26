@@ -14,8 +14,8 @@ class ConsumeApiController extends Controller
         $response = Http::get('http://localhost:8000/api/getAllCategoriesWithProductsPrice')
         ->collect();
         // dd($response);
-         return $response;
-        // return view('categories_products_price', ['response'=>$response]);
+        // return $response;
+         return view('categories_products_price', ['response'=>$response]);
     }
 
 
