@@ -29,8 +29,8 @@ class ConsumeApiController extends Controller
     //getAllCategoriesWithAtleastProduct
     public function getAllCategoriesWithAtleastProduct() {
         $response = Http::get('http://localhost:8000/api/getAllCategoriesWithAtleastProduct')
-        ->collect();
+        ->json();
 
-        return $response;
+        return view('categories_atleast_product', ['response'=>$response]);
     }
 }
