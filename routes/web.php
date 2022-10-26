@@ -20,3 +20,9 @@ use App\Http\Controllers\ConsumeApiController;
 
 //Web route for Categories with product's price greater than 500
 Route::get('/getCategoriesWithProductsPrice', [ConsumeApiController::class, 'getCategoriesWithProductsPrice']);
+
+//Web route for top 5 Categories with products
+Route::get('/getCategoriesWithNewListedProducts', [ConsumeApiController::class, 'getCategoriesWithNewListedProducts']);
+
+//Web route for Categories with atleast products
+Route::get('/getAllCategoriesWithAtleastProduct', [ConsumeApiController::class, 'getAllCategoriesWithAtleastProduct']);
